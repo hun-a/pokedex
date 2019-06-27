@@ -8,7 +8,7 @@
       </li>
     </ul>
     <button @click="goBack()" class="btn btn-secondary">Back to Categories</button>
-    <router-link :to="{ name: 'new' }" tag="button" class="btn btn-primary">Add pokémon</router-link>
+    <router-link :to="{ name: 'new', params: { name } }" tag="button" class="btn btn-primary">Add pokémon</router-link>
     <router-view></router-view>
   </div>
 </template>

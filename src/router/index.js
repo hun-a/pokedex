@@ -24,6 +24,7 @@ export default new Router({
         {
           path: 'pokemons/new',
           name: 'new',
+          props: route => ({ name: route.params.name }),
           component: AddPokemon
         }
       ]
