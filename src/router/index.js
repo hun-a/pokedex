@@ -18,7 +18,7 @@ export default new Router({
     {
       path: '/category/:name',
       name: 'category',
-      props: route => ({ id: Number(route.params.name) }),
+      props: route => ({ name: route.params.name }),
       component: Category,
       children: [
         {

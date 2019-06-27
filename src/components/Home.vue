@@ -3,7 +3,7 @@
     <h1>Welcome to the Pokédex!</h1>
     <ul class="list-group">
       <li v-for="category in categories" :key="category.id" class="list-group-item">
-        <router-link :to="{ name: 'category', params: { name: category.name } }" tag="button" class="btn btn-primary" >
+        <router-link :to="{ name: 'category', params: { name: category.name } }" tag="button" class="btn btn-primary">
           {{ category.name }} ({{ category.pokemons.length }})
         </router-link>
       </li>
@@ -22,7 +22,7 @@ export default {
     }
   },
   mounted () {
-    console.log('categories')
+    console.log('home')
   }
 }
 </script>
